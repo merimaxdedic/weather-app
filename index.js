@@ -83,3 +83,6 @@ async function FetchDataFromApi(city_name){
     });
      
 }
+
+// this function will help javascript to identify the elements
+InitializeElements();
