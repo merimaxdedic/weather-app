@@ -96,3 +96,21 @@ search_input.addEventListener("input", () => {
 
 
 dark_light_mode = "light";
+
+// listener to change the dark and light mode
+toggle_switch.addEventListener("click", () => {
+    
+    if(dark_light_mode == "dark"){
+        dark_light_mode = "light";
+
+        weather_details_div.style.backgroundColor = "#efedfa";
+        parent_div.style.backgroundImage = 'linear-gradient(to bottom right, #086463, #62e3e1, #086463)';
+
+    }else{
+        dark_light_mode = "dark";
+
+        weather_details_div.style.backgroundColor = "#383535";
+        parent_div.style.backgroundImage = 'linear-gradient(to bottom right, #111010, #949696, #111010)';
+    }
+
+});
