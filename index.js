@@ -89,3 +89,10 @@ InitializeElements();
 
 // the application is retrieving data using the API
 FetchDataFromApi("Tampa");
+search_input.addEventListener("input", () => {
+    // while the user is entering text, retrieve the information from the
+    FetchDataFromApi(search_input.value)
+});
+
+
+dark_light_mode = "light";
