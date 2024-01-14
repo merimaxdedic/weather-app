@@ -22,3 +22,7 @@ function InitializeElements(){
     parent_div = document.getElementsByClassName("main-body")[0];
     toggle_circle = document.getElementById("slide-ball");
 }
+
+// this function will load data from API
+async function FetchDataFromApi(city_name){
+    const response = await fetch(API_URL + city_name.toLowerCase() + `&appid=${MY_API_KEY}`);
