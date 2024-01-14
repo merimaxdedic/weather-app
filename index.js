@@ -132,3 +132,8 @@ toggle_switch.addEventListener("click", () => {
 
     });
  }
+
+  // firefox, chrome
+  TransitionListeners("transitionend");
+  // safari browser
+  TransitionListeners("webkitTransitionEnd");
