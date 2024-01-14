@@ -26,3 +26,6 @@ function InitializeElements(){
 // this function will load data from API
 async function FetchDataFromApi(city_name){
     const response = await fetch(API_URL + city_name.toLowerCase() + `&appid=${MY_API_KEY}`);
+
+     //variable to hold the data from api
+     let weather_info = await response.json()
