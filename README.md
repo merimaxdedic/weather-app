@@ -1,5 +1,5 @@
 # Weather-App
-Welcome to the Weather App! This simple web application provides you with the latest weather information for different cities. It is built using HTML, CSS, and JavaScript, that fetches weather data.dddd
+Welcome to the Weather App! This simple web application provides you with the latest weather information for different cities. It is built using HTML, CSS, and JavaScript, that fetches weather data.
 # Overview
 This is a Single Page Weather Application. The App uses openWeather API to get real time data of weather conditions at different places around the globe.
 # Functions
