@@ -29,3 +29,57 @@ async function FetchDataFromApi(city_name){
 
      //variable to hold the data from api
      let weather_info = await response.json()
+
+      // browser will loop through the json file and inflate the data into html elements
+    Object.keys(weather_info).forEach((key) => {
+        let current_object = weather_info[key];
+
+        if(key == "name"){
+            city.innerHTML = "City: " + current_object.toUpperCase();
+        }
+
+        else if(key == "clouds"){
+        
+            if(current_object["all"] <= 25){
+                // clouds coverage on the sky is less than 25
+                sunshine.innerHTML = "Very sunny";
+
+                cloud.innerHTML = "less cloudy";
+
+            }else if(current_object["all"] <= 50){
+
+                sunshine.innerHTML = "Partly sunny";
+
+                cloud.innerHTML = "Partly cloudy";
+
+            }else if(current_object["all"] <= 100){
+
+                cloud.innerHTML = "Very cloudy";
+
+                sunshine.innerHTML = "No sunshine";
+
+            }
+        }
+
+        else if(key == "main"){
+            
+            humidity.innerHTML = current_object["humidity"] + " g/m3";
+
+            
+            temperature.innerHTML = Math.round(current_object["temp"]) + " °c";
+
+            
+            pressure.innerHTML = current_object["pressure"] + " Pa";
+
+        }
+
+        
+        else if(key == "wind"){
+
+            windspeed.innerHTML = current_object["speed"] + " km/h";
+
+        }
+        
+    });
+     
+}
