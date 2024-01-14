@@ -114,3 +114,21 @@ toggle_switch.addEventListener("click", () => {
     }
 
 });
+
+ /* listens to whether the toggle button has finished transitioning
+  it will then change the color of the toggle background color*/
+
+  function TransitionListeners(listener){
+    toggle_circle.addEventListener(listener, () => {
+
+        (toggle_circle.style.backgroundColor == "rgb(16, 126, 71)") ?
+
+        toggle_circle.style.backgroundColor = "#2196F3" :
+
+        
+        toggle_circle.style.backgroundColor = "#107e47";
+
+        
+
+    });
+ }
