@@ -4,9 +4,124 @@
 
 body{
     margin: 0px;
- /* give the body a gradient background */
-.main-body{
+ 
+    .main-body{
     background-image: linear-gradient(to bottom right, #086463, #62e3e1, #086463);
     width: 100%;
     height: 100vh;
+}
+.top-bar{
+    display: flex;
+}
+
+.icon{
+    margin: 30px;
+}
+.icon img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+.icon p{
+    margin-top: 0px;
+    color: white;
+}
+
+#search_city{
+    width: 60%;
+    height: 25px;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 35px;
+    margin-left: 10%;
+    background-color: #dfe5ec;
+    font-size: large;
+}
+
+.weather-details{
+    width: 60%;
+    margin-left: 25%;
+    background-color: #efedfa;
+    height: 430px;
+    padding: 10px;
+    border-radius: 45px;
+    border: 10px solid #b5d3e1;
+}
+
+#city-name{
+    margin-left: 30px;
+    margin-top: 30px;
+    color: rgb(0, 162, 255);
+    font-weight: bolder;
+}
+
+.weather-conditions{
+    display: flex;
+}
+
+.weather-condition{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+
+.weather-condition img{
+    width: 60px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+.weather-condition .title{
+    color: rgb(13, 1, 1);
+    font-weight: bold;
+}
+
+.weather-condition p{
+    color: rgb(158, 157, 157);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    -webkit-transition: .4s;
+    transition: .4s;
+    top: 0;
+    left: 0;
+    background-color: rgb(47, 16, 126);
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    bottom: 0;
+}
+
+.slider:before {
+    background-color: white;
+    height: 18px;
+    width: 18px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    position: absolute;
+    content: "";
+    left: 4px;
+    bottom: 4px;
+  }
+  
 }
