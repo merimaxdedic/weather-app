@@ -86,3 +86,6 @@ async function FetchDataFromApi(city_name){
 
 // this function will help javascript to identify the elements
 InitializeElements();
+
+// the application is retrieving data using the API
+FetchDataFromApi("Tampa");
